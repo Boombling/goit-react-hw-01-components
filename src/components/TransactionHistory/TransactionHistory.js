@@ -1,11 +1,12 @@
 import React from 'react';
 import PorpsTypes from 'prop-types';
+import styles from './TransactionHistory.module.css';
 
 const TransactionHistory = ({ type, amount, currency }) => (
-    <tr>
-        <td>{type}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
+    <tr className={styles.list}>
+        <td className={styles.listBody}>{amount}</td>
+        <td className={styles.listBody}>{currency}</td>
+        <td className={styles.listBody}>{type}</td>
     </tr>
 );
 TransactionHistory.prototype = {

@@ -1,11 +1,23 @@
 import React from 'react';
 import PorpsTypes from 'prop-types';
+import styles from './FriendListItem.module.css'
+
+const status = {
+    options: {
+        marginLeft: 15,
+        marginRight: 15,
+        width: 20,
+        height: 20,
+        borderRadius: '50%',
+    }
+};
 
 const FriednsListItem = ({ avatar, name, isOnline }) => (
-    <li className="item">
-        <span className="status">{isOnline === true ? 'Онлайн' : 'Офлайн'} </span>
-        <img className="avatar" src={avatar} alt={name} width="48" />
-        <p className="name">{name}</p>
+    <li className={styles.item}>
+        <span style={{
+            ...status.options, backgroundColor: isOnline === true ?  'green' : 'red'}}></span>
+        <img className={styles.avatar} src={avatar} alt={name} width="48" />
+        <p className={styles.name}>{name}</p>
     </li>
 );
 FriednsListItem.porpsTypes = {

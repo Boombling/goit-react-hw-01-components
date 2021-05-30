@@ -1,16 +1,17 @@
 import React from 'react';
 import TransactionHistory from '../TransactionHistory/TransactionHistory';
+import styles from './TransactionList.module.css';
 
 const TransactionList = ({ items }) => (
-    <table className="transaction-history">
-        <thead>
-            <tr>
-                <th>Type</th>
-                <th>Amount</th>
-                <th>Currency</th>
+    <table className={styles.transactionHistory}>
+        <thead className={styles.article}>
+            <tr className={styles.articleList}>
+                <th className={styles.item}>Type</th>
+                <th className={styles.item}>Amount</th>
+                <th className={styles.item}>Currency</th>
             </tr>
         </thead>
-        <tbody>
+        <tbody className={styles.resaltBody}>
             {items.map((items) => (
             
                 <TransactionHistory

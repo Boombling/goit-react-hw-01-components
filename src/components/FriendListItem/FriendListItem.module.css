@@ -1,0 +1,15 @@
+.item {
+  display: flex;
+  width: 320px;
+  border-radius: 4px;
+  box-shadow: 2px 1px 7px rgba(73, 72, 72);
+  height: 70px;
+  border: 2px solid grey;
+  margin-bottom: 10px;
+  align-items: center;
+}
+.name {
+  font-family: cursive, sans-serif;
+  padding-left: 20px;
+  font-size: 24px;
+}
