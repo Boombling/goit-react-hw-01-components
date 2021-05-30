@@ -1,0 +1,33 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sigmar One', cursive;
+  width: 100%;
+  height: 90px;
+  color: rgb(245, 245, 245);
+}
+.item:nth-child(1) {
+  background-color: rgb(0, 195, 255);
+}
+
+.item:nth-child(2) {
+  background-color: rgb(195, 0, 255);
+}
+
+.item:nth-child(3) {
+  background-color: rgb(255, 0, 85);
+}
+
+.item:nth-child(4) {
+  background-color: rgb(60, 255, 0);
+}
+.label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+}
+.percentage {
+  font-size: 24px;
+}

@@ -15,7 +15,7 @@ const App = () => {
     <div>
       <Profile user={user}/>
       
-      <StatisticData stats={statisticalData} />
+      <StatisticData  title="Upload stats" stats={statisticalData} />
 
       <FriendsList friends={friends}/>
       <TransactionList items={transactions} />
