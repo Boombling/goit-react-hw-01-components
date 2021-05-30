@@ -5,17 +5,18 @@ import FriendListItem from './FriendListItem';
 const FriendsList = ({ friends }) => (
     <ul className="friend-list">
         {friends.map((friends) => (
-        <div key={friends.id}>
-        <FriendListItem
+        
+            <FriendListItem
+            key={friends.id}
             avatar={friends.avatar}
             name={friends.name}
             isOnline={friends.isOnline}
             />
-        </div>
+      
        ))}
     </ul>
 );
-FriendsList.PorpsTypes = {
+FriendsList.porpsTypes = {
     friends: PorpsTypes.arrayOf(PorpsTypes.shape({
         id: PorpsTypes.string.isRequired,
     })).isRequired,
