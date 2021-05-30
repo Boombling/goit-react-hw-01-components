@@ -1,5 +1,5 @@
 import React from "react";
-import Profile from "./Profile";
+import Profile from "./ProfileTest";
 
 const ProfileInfo = ({ user }) => (
     <div >

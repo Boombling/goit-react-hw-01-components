@@ -1,21 +1,24 @@
 import React from 'react';
 import user from './user.json';
-import ProfileInfo from './components/ProfileInfo';
 import statisticalData from './statistical-data.json';
 import StatisticData from './components/StatisticData';
 import friends from './friend-list.json'
 import FriendsList from './components/FriendList'
 import transactions from './transactions.json';
-import TransactionList from './components/TransactionList'
+import TransactionList from './components/TransactionList';
+import Profile from './components/Profile'; 
+import StatisticTest from './components/StatisticTest';
 
 const App = () => {
   return (
     <div>
-      {/* <ProfileInfo user={user} />     */}
-      {/* <StatisticData  title="Upload stats" stats={statisticalData} /> */}
+      {/* <Profile user={user}/> */}
+      
+      {/* <StatisticTest stats={statisticalData} /> */}
+      <StatisticData  title="Upload stats" stats={statisticalData} />
       {/* <StatisticData stats={statisticalData} /> */}
       {/* <FriendsList friends={friends}/> */}
-      <TransactionList items={transactions} />
+      {/* <TransactionList items={transactions} /> */}
     </div>
   );
 };
