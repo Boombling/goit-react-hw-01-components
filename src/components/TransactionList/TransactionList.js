@@ -1,5 +1,5 @@
 import React from 'react';
-import TransactionHistory from './TransactionHistory';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
 
 const TransactionList = ({ items }) => (
     <table className="transaction-history">

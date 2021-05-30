@@ -1,5 +1,5 @@
 import React from "react";
-import Statistics from "./Statistics";
+import Statistics from "../Statistic/Statistics";
 
 const StatisticData = ({stats}) => (
     <section className="statistics">

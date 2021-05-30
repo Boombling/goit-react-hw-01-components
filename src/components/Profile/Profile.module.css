@@ -1,0 +1,63 @@
+.profile {
+  width: 360px;
+  border: 1px solid grey;
+  border-radius: 4px;
+  box-shadow: 10px 5px 5px grey;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 5px 10px;
+}
+.avatar {
+  border-radius: 100px;
+  border: 1px solid rgba(92, 92, 92, 0.438);
+  box-shadow: 5px 5px 7px rgba(73, 72, 72, 0);
+}
+.name {
+  font-size: 24px;
+  font-family: 'Odibee Sans', cursive;
+  padding-bottom: 10px;
+}
+.tag {
+  font-size: 16px;
+  font-family: 'Odibee Sans', cursive;
+  color: darkgrey;
+  padding-bottom: 5px;
+}
+.location {
+  font-size: 16px;
+  font-family: 'Odibee Sans', cursive;
+  color: darkgrey;
+  padding-bottom: 5px;
+}
+.stats {
+  display: inline-flex;
+  width: 100%;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  justify-content: center;
+  align-items: center;
+  background-color: lightcyan;
+  font-family: 'Sigmar One', cursive;
+  width: 100%;
+  height: 75px;
+}
+.label {
+  font-size: 18px;
+  padding-bottom: 8px;
+  color: dimgray;
+}
+.quantity {
+  font-size: 14px;
+  padding-bottom: 5px;
+  color: blue;
+}
