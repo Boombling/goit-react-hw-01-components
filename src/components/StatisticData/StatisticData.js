@@ -2,9 +2,9 @@ import React from "react";
 import Statistics from "../Statistic/Statistics";
 import styles from './StatisticData.module.css'
 
-const StatisticData = ({stats}) => (
+const StatisticData = ({stats, title}) => (
     <section className={styles.statistics}>
-        <h2 className={styles.title}>Upload stats</h2>
+        {title && <h2 className={styles.title}>{title}</h2>}
         <ul className={styles.statList}>
             {stats.map(({ label, percentage, id }) => (
                 <Statistics
