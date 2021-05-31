@@ -11,6 +11,7 @@ html {
 body {
   overflow-x: hidden;
   letter-spacing: 0.03em;
+  background: linear-gradient(rgb(248, 103, 103), rgb(63, 185, 255));
 }
 
 ul {

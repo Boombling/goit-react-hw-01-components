@@ -7,6 +7,7 @@
   border: 2px solid grey;
   margin-bottom: 10px;
   align-items: center;
+  background-color: #d3aef5;
 }
 .name {
   font-family: cursive, sans-serif;
