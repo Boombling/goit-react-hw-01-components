@@ -13,11 +13,21 @@ import Profile from './components/Profile/Profile';
 const App = () => {
   return (
     <div>
-      <Profile user={user}/>
+      <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        followers={ user.stats.followers}
+        views={ user.stats.views}
+        likes={ user.stats.likes}
+      />
       
       <StatisticData  title="Upload stats" stats={statisticalData} />
+      <StatisticData  stats={statisticalData} />
 
-      <FriendsList friends={friends}/>
+      <FriendsList friends={friends} />
+      
       <TransactionList items={transactions} />
     </div>
   );

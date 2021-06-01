@@ -15,7 +15,7 @@ const status = {
 const FriednsListItem = ({ avatar, name, isOnline }) => (
     <li className={styles.item}>
         <span style={{
-            ...status.options, backgroundColor: isOnline === true ?  'green' : 'red'}}></span>
+            ...status.options, backgroundColor: isOnline === true ?  'green' : 'red'}} /> 
         <img className={styles.avatar} src={avatar} alt={name} width="48" />
         <p className={styles.name}>{name}</p>
     </li>
